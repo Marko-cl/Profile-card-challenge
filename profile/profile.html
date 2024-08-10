@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+
+
+
+
+<body>
+<div class="card">
+
+<div class="top" id="top">
+<img src="icon.png" class="image">
+</div>
+
+<div class="text" id="text">
+<p><h2 style="font-weight: bolder;">Markelo Qosja</h2></p>
+<p><h3>@MarkeloQosja</h3></p>
+<p><a href=""><img src="fb.png"></a> <a href=""><img src="ig.png"></a> <a href=""><img src="link.png"></a> <a href=""><img src="x.png" style="height: 50px;width: 50px;"></a></p>
+<p>text</p>
+
+</div>
+
+<div class="contact" id="contact">
+<button class="follow">Follow</button> <button class="message">Message</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<style>
+    body{
+        background-color: bisque;
+    }
+.card{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1.5fr 0.5fr;
+grid-template-areas:
+"top"
+"text"
+"contact"
+;
+height: 600px;
+width: 400px;
+margin: auto;
+transform: translateY(50% );
+border-radius: 50px;background-color: white;
+box-shadow: 0px 0px 8px blue;
+transition-duration:  0.5s;
+transition-timing-function: ease-out;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px black;
+}
+
+
+#top{grid-area: top;background-image: url(back.jpg);background-size: contain,cover;background-repeat: no-repeat;align-items: center;justify-content: center;justify-items: center;text-align: center;border-radius: 50px 50px 0 0;}
+#text{grid-area: text;align-items: center;justify-content: center;justify-items: center;text-align: center;word-spacing: 5px;}
+#contact{grid-area: contact;align-items: center;justify-content: center;justify-items: center;text-align: center;word-spacing: 30px;}
+
+#top img{
+    height: 95px;
+    width: 100px;
+border-radius: 1000px;
+transform: translateY(50%);
+
+}
+button{
+    border-radius: 100px;padding: 10px;padding-left: 30px;padding-right: 30px;
+}
+.follow{
+    background-color: lightskyblue;
+}
+.follow:hover{
+    cursor: pointer;
+}
+.message{
+    background-color: transparent;cursor: pointer;
+}
+</style>
+
+
+
+
+
+</html>
